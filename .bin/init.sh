@@ -12,6 +12,6 @@ fi
 # fish
 brew install fish
 
-echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells > /dev/null
 
 chsh -s /opt/homebrew/bin/fish
