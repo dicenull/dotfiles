@@ -1,0 +1,30 @@
+[user]
+	name = dicenull
+	email = dicenull.dev@gmail.com
+
+[alias]
+	cp = cherry-pick
+	a = !git add .
+	c = commit
+	ac = !git add . && git commit
+	flash = !git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d
+	update = !git fetch --prune && git fetch origin master && git flash
+	refactor = !git update && git rebase -i --autosquash origin/master
+	refactorfrom = !git update && git rebase -i --autosquash
+	fusion = !git update && git merge origin/master
+	amend = commit --amend --no-edit
+	amen = !git amend
+	edit = commit --amend
+	fixup = commit --fixup
+	graph = log --oneline --graph
+	rename = branch -m
+	prev = reset --soft HEAD^
+	force = !git fetch origin master && git push --force-with-lease
+[core]
+	editor = vim
+
+[commit]
+	template = ./.commit_template
+	tempalte = .commit_template
+[init]
+	defaultBranch = main
