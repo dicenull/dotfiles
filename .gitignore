@@ -1,2 +1,7 @@
 .bin/.config/fish/fish_variables
 .bin/.config/flutter/tool_state
+.bin/.config/karabiner/automatic_backups
+.bin/.config/zellij/config.kdl.bak
+.bin/.config/fish/fish_variables
+.bin/.config/fish/conf.d
+.bin/.config/configstore
