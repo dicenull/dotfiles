@@ -1,5 +1,9 @@
 eval (/opt/homebrew/bin/brew shellenv)
 
+if status is-interactive
+    eval (zellij setup --generate-auto-start fish | string collect)
+end
+
 alias chrome='open /Applications/Google\ Chrome.app/'
 alias trja='trans {en=ja}'
 alias tren='trans {ja=en}'

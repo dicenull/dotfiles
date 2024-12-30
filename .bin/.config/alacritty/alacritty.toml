@@ -10,3 +10,10 @@ startup_mode = "Maximized"
 [font]
 normal = { family = "PlemolJP35 Console NF", style = "SemiBold" }
 size = 16
+
+# [terminal]
+# shell = { program = "fish", args = [
+#     "-l",
+#     "-c",
+#     "zellij attach --index 0 --create",
+# ] }
